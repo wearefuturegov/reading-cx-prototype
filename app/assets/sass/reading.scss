@@ -16,6 +16,8 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
 
+$reading-blue: #2B63BD;
+
 .reading-banner-img {
   width: 100%;
   display: block;
@@ -23,25 +25,17 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 .reading-banner {
   position: relative;
-  background-image: url("https://images.reading.gov.uk/2020/06/TownHall.jpg");
-  background-position: center center;
-  background-size: cover;
+  background: #3A84FA;
   height: 300px;
-}
-
-.reading-banner-shadow {
-  position: absolute;
-  left: 0%;
-  right: 56.51%;
-  top: 0%;
-  bottom: 0%;
-
-  background: linear-gradient(90.02deg, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0) 72.85%);
 }
 
 .reading-banner-content {
   position: relative;
   padding: 2rem 8rem;
+}
+
+.reading-bg-grey {
+  background: #F2F2F2;
 }
 
 .reading-search-input {
@@ -59,7 +53,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   }
 
   .reading-search-icon {
-    background: #2E65B7;
+    background: $reading-blue;
     width: 3.5rem;
     display: flex;
     align-items: center;
@@ -68,6 +62,34 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
     img {
       height: 20px;
     }
+  }
+}
+
+.reading-card {
+  background-color: $reading-blue;
+  padding: 16px 20px 28px;
+  border-radius: 6px;
+  height: 240px;
+
+  .govuk-list {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .govuk-heading-m {
+    font-size: 1.85rem;
+  }
+
+  .govuk-heading-m, .govuk-link, a, .app-step-nav-header__title, .app-step-nav-related__link {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+  }
+
+  .govuk-list > li {
+    margin-bottom: 15px;
   }
 }
 

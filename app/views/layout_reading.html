@@ -14,8 +14,18 @@
 {% endblock %}
 
 {% block header %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
   <div class="reading-banner">
-    <div class="reading-banner-shadow"></div>
 
     <div class="reading-banner-content">
 
@@ -30,4 +40,23 @@
     </div>
   </div>
 {% endblock %}
+
+{% set containerClasses = containerClasses | default("govuk-width-container") %}
+{% set mainClasses = mainClasses | default("govuk-main-wrapper govuk-main-wrapper--auto-spacing") %}
+
+{% block main %}
+
+  <div class={{containerClasses}}>
+    <main class={{mainClasses}} id="main-content" role="main">
+
+      {% block beforeContent %}
+      {% endblock %}
+
+      {% block content %}
+      {% endblock %}
+
+    </main>
+  </div>
+{% endblock %}
+
 {% block footer %}{% endblock %}
