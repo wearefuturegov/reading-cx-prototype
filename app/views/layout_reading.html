@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block headIcons %}
+  <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
+{% endblock %}
+
+{% block head %}
+  <!--[if lte IE 8]><link href="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if gt IE 8]><!--><link href="/public/stylesheets/reading.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+  {% for stylesheetUrl in extensionConfig.stylesheets %}
+    <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+  {% endfor %}
+{% endblock %}
+
+{% block header %}
+  <div class="reading-banner">
+    <div class="reading-banner-shadow"></div>
+
+    <div class="reading-banner-content">
+
+      <img src="/public/images/reading-logo.svg" alt="" class="">
+
+      <div class="reading-search-input">
+        <input class="reading-input govuk-input" id="event-name" name="event-name" type="text" placeholder="Search for services or general information">
+        <span class="reading-search-icon">
+          <img src="/public/images/search.svg" alt="">
+        </span>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}{% endblock %}
