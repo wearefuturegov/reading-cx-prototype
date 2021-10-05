@@ -17,6 +17,9 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 @import "application";
 
 $reading-blue: #2B63BD;
+$reading-dark-blue: #475976;
+$reading-black: #222222;
+$reading-bright-blue: #3A84FA;
 
 .reading-banner-img {
   width: 100%;
@@ -38,8 +41,20 @@ $reading-blue: #2B63BD;
   background: #F2F2F2;
 }
 
+.reading-bg-dark-blue {
+  background: $reading-dark-blue;
+}
+
+.reading-bg-black {
+  background: $reading-black;
+}
+
 .reading-text-blue {
   color: $reading-blue;
+}
+
+.reading-text-white {
+  color: white;
 }
 
 .reading-search-input {
@@ -91,5 +106,27 @@ $reading-blue: #2B63BD;
   .govuk-list > li {
     margin-bottom: 15px;
   }
+}
+
+.reading-subscribe-input {
+  display: flex;
+
+  .reading-input {
+    height: auto;
+  }
+
+  .govuk-button {
+    background-color: $reading-bright-blue;
+    border-radius: 6px;
+    box-shadow: none;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.reading-footer {
+  background: $reading-black;
 }
 

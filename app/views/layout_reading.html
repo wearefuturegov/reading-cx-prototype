@@ -27,7 +27,7 @@
 
   <div class="reading-banner">
 
-    <div class="reading-banner-content">
+    <div class="govuk-width-container reading-banner-content">
 
       <img src="/public/images/reading-logo.svg" alt="" class="">
 
@@ -59,4 +59,44 @@
   </div>
 {% endblock %}
 
-{% block footer %}{% endblock %}
+{% block footer %}
+  <section class="reading-bg-dark-blue">
+    <div class="govuk-width-container govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h4 class="govuk-heading-l reading-text-white govuk-!-margin-bottom-3">Sign up to receive our newsletter</h4>
+          <p class="reading-text-white govuk-!-margin-bottom-5">Get the latest news and information about your council services</p>
+
+          <div class="reading-subscribe-input">
+            <input class="reading-input govuk-input" id="event-name" name="event-name" type="text" placeholder="Enter your email address">
+            <button class="govuk-button" data-module="govuk-button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="reading-footer">
+    <div class="govuk-width-container govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          <h6 class="govuk-heading-s reading-text-white govuk-!-margin-bottom-3">About Our Council</h6>
+          <p class="reading-text-white">Accessibility</p>
+          <p class="reading-text-white">Borough Profile</p>
+          <p class="reading-text-white">Our Mayor</p>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <h6 class="govuk-heading-s reading-text-white govuk-!-margin-bottom-3">Safeguarding</h6>
+          <p class="reading-text-white">Report a concern about a child</p>
+          <p class="reading-text-white">Report a concern about an adult</p>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <h6 class="govuk-heading-s reading-text-white govuk-!-margin-bottom-3">Social media</h6>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <h6 class="govuk-heading-s reading-text-white govuk-!-margin-bottom-3">Language</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
