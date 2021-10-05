@@ -38,6 +38,10 @@ $reading-blue: #2B63BD;
   background: #F2F2F2;
 }
 
+.reading-text-blue {
+  color: $reading-blue;
+}
+
 .reading-search-input {
   padding-top: 2rem;
   display: flex;
@@ -80,12 +84,8 @@ $reading-blue: #2B63BD;
     font-size: 1.85rem;
   }
 
-  .govuk-heading-m, .govuk-link, a, .app-step-nav-header__title, .app-step-nav-related__link {
+  .govuk-heading-m {
     color: white;
-
-    &:visited {
-      color: white;
-    }
   }
 
   .govuk-list > li {
