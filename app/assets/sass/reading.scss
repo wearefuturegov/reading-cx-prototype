@@ -157,5 +157,10 @@ $reading-bright-blue: #3A84FA;
 
 .reading-footer {
   background: $reading-black;
+  p {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
 }
 
